@@ -75,7 +75,7 @@ class App extends React.Component {
 
     return (
       <div className="app">
-        <h1>Welcome to App from GIT</h1>
+        <h1>Welcome to App from GIT - dev test</h1>
         <form onSubmit={this.submit}>
           <div className="form-input">
             <input
