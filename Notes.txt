@@ -1,0 +1,6 @@
+HEROKU CLI COMMANDS https://devcenter.heroku.com/articles/using-the-cli
+heroku COMMAND
+
+heroku config --app  mnz-dev
+heroku logs --app mnz-dev
+

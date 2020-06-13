@@ -1,6 +1,6 @@
 const express = require('express');
 const morgan = require('morgan');
-const keys = require('./config/keys')
+const keys = require('./config/keys');
 require('./services/database/db-mongo');//Set db
 require('./services/authentication/passport');//Set auth
 
