@@ -4,3 +4,6 @@ heroku COMMAND
 heroku config --app  mnz-dev
 heroku logs --app mnz-dev
 
+Google developer console:
+https://console.developers.google.com/apis/credentials?folder=&organizationId=&project=mnz-dev
+
