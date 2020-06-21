@@ -24,7 +24,7 @@ app.use(morgan('tiny'));//morgan is to write to console.
 
 //ROUTING
 app.use('/api', require('./routes/api'));
-require('./routes/authRoutes')(app);
+app.use('/auth', require('./routes/authRoutes'));
 
 if (process.env.NODE_ENV === 'production') {
 	app.use(express.static('client/build'));

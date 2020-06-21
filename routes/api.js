@@ -1,14 +1,7 @@
-const express = require('express');
+const router = require('express').Router();
 const BlogPost = require('../models/blogPost');
-const Users = require('../models/users');
-
-const router = express.Router();
 
 router.get('/', (req, res) => {
-  // const data = {
-  // 	username: 'ogi',
-  // 	age: 37
-  // };
   BlogPost.find({})
     .then((data) => {
       res.json(data);
@@ -19,8 +12,6 @@ router.get('/', (req, res) => {
 });
 
 router.post('/save', (req, res) => {
-
-  //console.log('Request:', req);
   console.log('Body:', req.body);
   const data = req.body;
   const newBlogPost = new BlogPost(data);

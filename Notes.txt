@@ -7,3 +7,10 @@ heroku logs --app mnz-dev
 Google developer console:
 https://console.developers.google.com/apis/credentials?folder=&organizationId=&project=mnz-dev
 
+-Normal use of proxy by setting it in package.json is not forwarding redirect calls (that have some text prop) so we
+ head to add proxy middleware to add more control for our oauth/google api
+ (https://create-react-app.dev/docs/proxying-api-requests-in-development/#configuring-the-proxy-manually).
+
+-There is also a discussion why is better to use proxy and the answer is that we can then use a cookie to send user info
+ and we can escape CORS problem.
+
