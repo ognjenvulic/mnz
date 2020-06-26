@@ -8,11 +8,20 @@ module.exports = function(app) {
       changeOrigin: true,
     })
   );
+
   app.use(
-    '/auth/googlec',
+    '/auth/*',
     createProxyMiddleware({
       target: 'http://localhost:8080',
       changeOrigin: true,
     })
   );
+
+  // app.use(
+  //   '/posts',
+  //   createProxyMiddleware({
+  //     target: 'http://localhost:3000',
+  //     changeOrigin: true,
+  //   })
+  // )
 };

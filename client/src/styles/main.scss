@@ -1,0 +1,43 @@
+@import "./components/components";
+
+.app {
+  padding: 10px;
+}
+
+.form-input {
+  margin:10px 0px;
+}
+
+.form-input input, .form-input textarea {
+  width: 50%;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  border-radius: .25rem;
+  border: 1px solid lightgrey;
+  padding: .375rem .75rem;
+  outline: none;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  padding: .375rem;
+  font-size: 1rem;
+  border-radius: .25rem;
+  line-height: 1.5rem;
+  cursor: pointer;
+}
+
+.blog-post_display {
+  border: 1px solid lightgray;
+  margin: 5px 0;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.grow {
+  flex-grow: 1
+}
+a {
+  color: white;
+}
