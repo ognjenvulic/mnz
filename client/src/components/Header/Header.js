@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-//import classes from './Header.scss';
+import classes from './Header.scss';
 import AppBar from '../material/AppBar/AppBar';
 import Toolbar from '../material/Toolbar/Toolbar';
 import IconButton from '../material/IconButton/IconButton';
@@ -9,7 +9,7 @@ import Icons, {IconName} from '../material/Icons/Icons';
 class Header extends Component {
 
   renderContent() {
-    switch (this.props.auth) {
+    switch (this.props.auth){ 
       case null:
         return;
       case false:
