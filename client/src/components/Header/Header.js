@@ -26,6 +26,10 @@ class Header extends Component {
         <Toolbar>
           <a href="/">MNZ</a>
           <div className='grow' />
+          <a href="/posts">Posts</a>
+          <div className='grow' />
+          <a href="/playground">Playground</a>
+          <div className='grow' />
           <ul>
             {this.renderContent()}
             {/*<a href="/auth/google">Login Google</a>*/}
