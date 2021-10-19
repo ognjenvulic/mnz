@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter } from 'react-router-dom';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
 import StateManagementProvider from './util/stateMng';
@@ -8,7 +9,9 @@ import App from './components/App';
 ReactDOM.render(
   <React.StrictMode>
     <StateManagementProvider>
-      <App />
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
     </StateManagementProvider>
   </React.StrictMode>,
   document.getElementById('root')
